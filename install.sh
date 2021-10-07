@@ -39,8 +39,18 @@ if [ -d "~/.oh-my-zsh" ]; then
     echo "ohmyzsh already installed"
 else
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    rm ~.zshrc
+    rm ~./zshrc
 fi
 
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.bashrc ~/.bashrc
+if [ -f "~/.zshrc" ]; then
+    echo "zshrc already configured"
+else
+    ln -s ~/dotfiles/.zshrc ~/.zshrc
+fi
+
+if [ -f "~/.bashrc" ]; then
+    echo "bashrc already configured"
+else
+    ln -s ~/dotfiles/.bashrc ~/.bashrc
+fi
+
