@@ -5,7 +5,7 @@ ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 echo "--Installing cargo"
-curl https://sh.rustup.rs -sSf | sh -y
+curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 echo "--Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
