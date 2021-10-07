@@ -39,7 +39,7 @@ if [ -d ~/.oh-my-zsh ]; then
 else
     sudo apt install zsh -y 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    rm ~./zshrc
+    rm ~/.zshrc
 fi
 
 echo "--Configuring rc files"
