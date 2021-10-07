@@ -6,7 +6,7 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 echo "--Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install -y
+~/.fzf/install
 
 echo "--Installing nvm"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
@@ -15,4 +15,5 @@ echo "--Installing pyenv"
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 echo "--Installing ohmyzsh"
+sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
