@@ -15,5 +15,5 @@ echo "--Installing pyenv"
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 echo "--Installing ohmyzsh"
-sudo apt install zsh
+sudo apt install zsh -y 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
