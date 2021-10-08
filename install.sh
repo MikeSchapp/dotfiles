@@ -44,14 +44,8 @@ fi
 
 echo "--Configuring rc files"
 
-if [ -f ~/.zshrc ]; then
-    echo "  zshrc already configured"
-else
-    ln -s ~/dotfiles/.zshrc ~/.zshrc
-fi
+rm ~/.zshrc
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 
-if [ -f ~/.bashrc ]; then
-    echo "  bashrc already configured"
-else
-    ln -s ~/dotfiles/.bashrc ~/.bashrc
-fi
+rm ~/.bashrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
