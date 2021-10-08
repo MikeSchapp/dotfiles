@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $(whoami)
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
