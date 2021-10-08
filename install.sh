@@ -32,6 +32,13 @@ else
     git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 fi
 
+echo "--Installing virtualenv"
+
+if [ -d ~/.pyenvplugins/pyenv-virtualenv ]; then
+    echo "  virtualenv already installed"
+else
+    git clone https://github.com/pyenv/pyenv-virtualenv.git $HOME/.pyenv/plugins/pyenv-virtualenv
+fi
 
 echo "--Installing ohmyzsh"
 sudo apt install zsh -y 
