@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 sudo chsh -s $(which zsh) $(whoami)
+zsh
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
