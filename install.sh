@@ -34,12 +34,11 @@ fi
 
 
 echo "--Installing ohmyzsh"
+sudo apt install zsh -y 
 if [ -d ~/.oh-my-zsh ]; then
     echo "  ohmyzsh already installed"
 else
-    sudo apt install zsh -y 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    rm ~/.zshrc
 fi
 
 echo "--Configuring rc files"
